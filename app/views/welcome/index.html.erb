@@ -1,8 +1,7 @@
-<h1>Seja bem vindo</h1>
-<p> <strong>Data:</strong>  <%= data_br(Date.today) %></p>
-
-<%= render "menu" %>
-
-<p>vc esta em ambiente de <strong><%= ambiente_rails %></strong></p>
-<p>Nome: <strong><%= @meu_nome %></strong></p>
-<p>Curso: <strong><%= @curso %></strong></p>
+<div class="jumbotron">
+  <h1 class="display-4"><%= t('welcome') %></h1>
+  <p class="lead"><%= t('messages.welcome')%></p>
+  <hr class="my-4">
+  <p><%= t('messages.menu')%></p>
+  <%= render "menu" %>
+</div>
